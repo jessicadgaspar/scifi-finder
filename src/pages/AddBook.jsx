@@ -1,4 +1,3 @@
-// src/pages/AddBook.jsx
 import React, {useState} from "react";
 import {Container, Form, Button} from "react-bootstrap";
 import {addBook} from "../services/api";
@@ -31,7 +30,7 @@ const AddBook = () => {
           <Form.Label>Título</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Digite o título"
+            placeholder="Título"
             value={newBook.title}
             onChange={(e) => setNewBook({...newBook, title: e.target.value})}
           />

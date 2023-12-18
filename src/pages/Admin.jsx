@@ -1,4 +1,3 @@
-// src/pages/Admin.jsx
 import React, {useEffect, useState} from "react";
 import {Container, Form, Button, Table} from "react-bootstrap";
 import {Link, useNavigate} from "react-router-dom";
@@ -107,7 +106,7 @@ const Admin = () => {
               <td>{book.category}</td>
               <td>{book.releaseDate}</td>
               <td>{truncateDescription(book.description, 100)}</td>{" "}
-              {/* Truncando a 100 caracteres */}
+              {/* Encurtar a descrição a 100 caracteres */}
               <td>
                 <a href={book.link} target="_blank" rel="noopener noreferrer">
                   Comprar

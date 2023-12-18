@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, {useState} from "react";
 import {Container, Form, Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
@@ -26,7 +25,7 @@ const Login = () => {
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Digite seu username"
+            placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -36,7 +35,7 @@ const Login = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Digite sua password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />

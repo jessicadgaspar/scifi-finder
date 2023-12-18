@@ -1,6 +1,5 @@
-// src/pages/EditBook.jsx
 import React, {useState, useEffect} from "react";
-import {Container, Form, Button} from "react-bootstrap";
+import {Container, Form, Button, Spinner} from "react-bootstrap";
 import {useParams, useNavigate} from "react-router-dom";
 import {getBook, updateBook} from "../services/api";
 
@@ -31,9 +30,13 @@ const EditBook = () => {
     navigate("/admin");
   };
 
-  if (!book) {
-    return <p>Carregando...</p>;
-  }
+ if (!book) {
+   return (
+     <Spinner className="spinner" animation="border" role="status">
+       <span className="visually-hidden"></span>
+     </Spinner>
+   );
+ }
 
   return (
     <Container>
